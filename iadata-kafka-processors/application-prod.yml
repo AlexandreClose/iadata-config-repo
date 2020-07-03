@@ -1,0 +1,22 @@
+spring:
+  kafka:
+    bootstrap-servers:
+      - ${KAFKA_HOST:10.198.0.91}:${KAFKA_PORT:9094}
+ingest:
+  upload:
+    dir: #TODO
+---
+api:
+  data:
+    applications:
+      url: "http://iadata-internal-proxy:1444/api/data"
+---
+elastic:
+  useSSL: true
+  securityType: apiKey
+  username:
+  pass:
+  apikey: 1oIJ_qunQdy0j2dUulYVhQ
+  apiid: 5P-U_3IBGswgxhvgF1x8
+  host: iadata-internal-proxy
+  port: 1443

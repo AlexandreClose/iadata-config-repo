@@ -1,0 +1,78 @@
+spring:
+  kafka:
+    client-id: kafkaprocessor
+    bootstrap-servers:
+       - ${KAFKA_HOST:localhost}:${KAFKA_PORT:9094}
+  batch:
+    job:
+      enabled: false
+      # max file size
+  servlet:
+    multipart:
+      max-file-size: 200MB
+      max-request-size: 200MB
+server:
+  servlet:
+    context-path: /kafkaprocessors
+---
+server:
+  port: 8082
+---
+jasypt:
+    encryptor:
+        bean: encryptorBean
+        algorythm: PBEWithMD5AndDES
+        password: PwdIADATACrypt@Pass
+        keyObtentionIterations: 1000
+        poolSize: 1
+        providerName: SunJCE
+        fixedSalt: aehlkq87sfjt595hoeghg5fdfg7789
+        stringOutputType: base64
+---
+ingest:
+  upload:
+    dir: D:\
+---
+api:
+  data:
+    applications:
+      #url: "https://iadata-dev.applis.intra/api/data"
+      url: "http://localhost:8098/api/data"
+---
+elastic:
+  useSSL: false
+  securityType: none
+  username:
+  pass:
+  apikey:
+  apiid:
+  host: localhost
+  port: 9200
+---
+kafkaprocessors:
+  topologytester:
+    input:
+      dir: topologytester_input_files
+    output:
+      file:
+        success:
+          prefix: "success-"
+        error:
+          prefix: "error-"
+      dir:
+        error: topologytester_output_error_files
+        success: topologytester_output_success_files
+        # 10 Go
+        # This limit is use for topologytester file upload. If the directory exceed this size after an upload
+        # the oldest files will be deleted
+        sizeLimit: 80000000000
+#---
+#management:
+#  endpoints:
+#    web:
+#      exposure:
+#        include: jolokia
+#  server:
+#    port: 9000
+
+
