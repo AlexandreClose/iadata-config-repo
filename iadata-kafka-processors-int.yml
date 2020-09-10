@@ -8,8 +8,7 @@ ingest:
 ---
 api:
   data:
-    applications:
-      url: "http://iadata-internal-proxy:1444/api/data"
+    url: "http://iadata-internal-proxy:1444/api/models"
 
 ---
 elastic:

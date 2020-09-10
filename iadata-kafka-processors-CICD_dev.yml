@@ -8,8 +8,7 @@ ingest:
 ---
 api:
   data:
-    applications:
-      url: "https://iadata-dev.applis.intra/api/data"
+    url: "https://iadata-dev.applis.intra/api/models"
 ---
 elastic:
   useSSL: true

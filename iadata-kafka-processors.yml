@@ -2,7 +2,7 @@ spring:
   kafka:
     client-id: kafkaprocessor
     bootstrap-servers:
-       - ${KAFKA_HOST:localhost}:${KAFKA_PORT:9094}
+      - ${KAFKA_HOST:localhost}:${KAFKA_PORT:9094}
   batch:
     job:
       enabled: false
@@ -13,21 +13,24 @@ spring:
       max-request-size: 200MB
 server:
   servlet:
-    context-path: /kafkaprocessors
+    context-path: /
 ---
 server:
   port: 8082
 ---
 jasypt:
-    encryptor:
-        bean: encryptorBean
-        algorythm: PBEWithMD5AndDES
-        password: PwdIADATACrypt@Pass
-        keyObtentionIterations: 1000
-        poolSize: 1
-        providerName: SunJCE
-        fixedSalt: aehlkq87sfjt595hoeghg5fdfg7789
-        stringOutputType: base64
+  encryptor:
+    bean: encryptorBean
+    algorythm: PBEWithMD5AndDES
+    password: PwdIADATACrypt@Pass
+    keyObtentionIterations: 1000
+    poolSize: 1
+    providerName: SunJCE
+    fixedSalt: aehlkq87sfjt595hoeghg5fdfg7789
+    stringOutputType: base64
+---
+kafkaConfig:
+  pollingCronExpression: "0/30 * * * * ?"
 ---
 ingest:
   upload:
@@ -35,9 +38,7 @@ ingest:
 ---
 api:
   data:
-    applications:
-      #url: "https://iadata-dev.applis.intra/api/data"
-      url: "http://localhost:8098/api/data"
+    url: "http://localhost:8098/api/models/"
 ---
 elastic:
   useSSL: false

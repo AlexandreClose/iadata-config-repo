@@ -8,15 +8,14 @@ ingest:
 ---
 api:
   data:
-    applications:
-      url: "http://iadata-internal-proxy:1444/api/data"
+    url: "http://iadata-internal-proxy:1444/api/models"
 ---
 elastic:
   useSSL: true
   securityType: apiKey
   username:
   pass:
-  apikey: 1oIJ_qunQdy0j2dUulYVhQ
-  apiid: 5P-U_3IBGswgxhvgF1x8
+  apikey: R9vi6cxyR_y3cP0px0L3yg
+  apiid: MX66CnQB01Ueoc9mu0n_
   host: iadata-internal-proxy
   port: 1443

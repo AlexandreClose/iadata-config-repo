@@ -6,10 +6,12 @@ ingest:
   upload:
     dir: #TODO
 ---
+kafkaConfig:
+  pollingCronExpression: "0 * * * * ?"
+---
 api:
   data:
-    applications:
-      url: "http://iadata-internal-proxy:1444/api/data"
+    url: "http://iadata-internal-proxy:1444/api/models"
 
 ---
 elastic:
