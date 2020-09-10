@@ -1,0 +1,14 @@
+#Elastic Logs
+#logging.level.org.springframework.data.elasticsearch.core=DEBUG
+#logging.level.tracer=TRACE
+
+#Elastic conf
+elastic:
+  scheme: https
+  host: iadata-internal-proxy
+  port: 1443
+  useSSL: true
+  securityType: apiKey
+  technicalApiKeyBase64: eUV3a25uSUJlXzZ6Umk1T25FZFY6NEZjRzlmbF9UcTZvX2RUb2VUcDNmdw==
+  commonPassword: 97@Z&$Nmy(HX.QU~
+  visitorApiKeyBase64: bXI0dUJuUUJrNmo1dk50bmh3OTc6ME5LYVE4dVJUUHFjVGVnV19ZejJFZw==

@@ -1,0 +1,36 @@
+  
+server:
+  port: 8098
+  error:
+    include-message: ALWAYS
+    include-stacktrace: NEVER
+
+spring:
+  security:
+    user:
+      name: log
+      password: pass
+  data:
+    rest:
+      basePath: /api/models
+
+management:
+  health:
+    elasticsearch:
+      enabled: false
+
+
+#Elastic conf
+elastic:
+  scheme: http
+  host: localhost
+  port: 9200
+  useSSL: false
+  securityType: none
+  username:
+  pass:
+  technicalApiKeyBase64:
+  userPrefix: ta_
+  commonPassword:
+  visitorUserId: visitor
+  visitorApiKeyBase64:
