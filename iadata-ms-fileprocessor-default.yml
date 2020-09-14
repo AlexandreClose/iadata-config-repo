@@ -1,0 +1,19 @@
+# dont run job on startup
+spring:
+  batch:
+    job:
+      enabled: false
+    initialize-schema: always
+  main:
+    web-application-type: none
+
+  # Kafka config
+  kafka:
+    consumer:
+      bootstrap-servers: localhost:9092
+    producer:
+      bootstrap-servers: localhost:9092
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+
+# Files dir
+inputFile: ${INPUT_FILE}
