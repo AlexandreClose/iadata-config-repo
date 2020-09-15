@@ -1,0 +1,8 @@
+# sending to ingest pipeline properties
+ingest:
+  ingestMode: api
+  brokerIngestHost: kafka-1
+  brokerIngestPort: 9092
+  urlApiIngest:
+  tokenApiIngest:
+
