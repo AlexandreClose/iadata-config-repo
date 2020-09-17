@@ -12,3 +12,8 @@ elastic:
   technicalApiKeyBase64: TVg2NkNuUUIwMVVlb2M5bXUwbl86Ujl2aTZjeHlSX3kzY1AwcHgwTDN5Zw==
   commonPassword: K?C!HwY'^!*!(j3P
   visitorApiKeyBase64: NHptYVEzUUIwMVVlb2M5bXFZYm86YmtfZDRzOXNUTjJyUkV2c1BMamFLZw==
+
+siteback:
+  api:
+    userid:
+      transform: LOWERCASE

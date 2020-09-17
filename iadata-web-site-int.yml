@@ -12,3 +12,8 @@ elastic:
   technicalApiKeyBase64: OU5jWjUzSUJPSkZlaVFTS0M1UFk6VDFMR2o0TXNUV21MZXExLXRpbEt1Zw==
   commonPassword: aWP'kzr'c>`68=WM
   visitorApiKeyBase64:
+
+siteback:
+  api:
+    userid:
+      transform: LOWERCASE

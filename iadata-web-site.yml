@@ -34,3 +34,8 @@ elastic:
   commonPassword:
   visitorUserId: visitor
   visitorApiKeyBase64:
+
+siteback:
+  api:
+    userid:
+      transform: NONE
