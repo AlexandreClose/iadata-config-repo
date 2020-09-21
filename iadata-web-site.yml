@@ -18,6 +18,10 @@ management:
   health:
     elasticsearch:
       enabled: false
+  endpoints:
+    web:
+      exposure:
+        include: refresh
 
 
 #Elastic conf

@@ -17,3 +17,9 @@ spring:
 
 # Files dir
 inputFile: ${INPUT_FILE}
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh

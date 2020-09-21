@@ -68,12 +68,9 @@ kafkaprocessors:
         # the oldest files will be deleted
         sizeLimit: 80000000000
 #---
-#management:
-#  endpoints:
-#    web:
-#      exposure:
-#        include: jolokia
-#  server:
-#    port: 9000
-
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh
 

@@ -24,3 +24,8 @@ ingest:
   brokerIngestPort: 9092
 
 
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh
