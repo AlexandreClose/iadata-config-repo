@@ -11,7 +11,7 @@ elastic:
   securityType: apiKey
   technicalApiKeyBase64: OU5jWjUzSUJPSkZlaVFTS0M1UFk6VDFMR2o0TXNUV21MZXExLXRpbEt1Zw==
   commonPassword: aWP'kzr'c>`68=WM
-  visitorApiKeyBase64:
+  visitorApiKeyBase64: eXhmRDJIUUJ2Q1ZZUVBzMW1YY246NjRWZmdwdnhSdE9EdHd1X2JmeE1yZw==
 
 siteback:
   api:
