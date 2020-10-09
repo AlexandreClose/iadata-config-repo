@@ -1,7 +1,7 @@
-logging:
-  level:
-    org.springframework.data.elasticsearch.core: DEBUG
-    tracer: TRACE
+#logging:
+#  level:
+#    org.springframework.data.elasticsearch.core: DEBUG
+#    tracer: TRACE
 
 #Elastic conf
 elastic:
