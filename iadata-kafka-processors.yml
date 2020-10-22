@@ -77,6 +77,8 @@ management:
 ingest:
   upload:
     dir: /iadata_inbox
+  fileExtensions:
+    readyToIngest: ".readyToIngest"
 ---
 iadata:
   datetime:
