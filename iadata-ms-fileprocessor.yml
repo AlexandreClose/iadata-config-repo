@@ -20,7 +20,7 @@ app:
     enable: false
 
 fileprocessor:
-  inbox : /var/lib/data/iadata_inbox
+  inbox : /iadata_inbox
   readyToIngestExtension: "readyToIngest"
   processingExtension: "processing"
   processedExtension: "processed"
