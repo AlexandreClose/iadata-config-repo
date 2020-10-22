@@ -6,7 +6,6 @@ spring:
     initialize-schema: always
   main:
     web-application-type: none
-
   # Kafka config
   kafka:
     consumer:
@@ -16,10 +15,14 @@ spring:
       value-serializer: org.apache.kafka.common.serialization.StringSerializer
 
 # Files dir
-inputFile: ${INPUT_FILE}
+app:
+  scheduling:
+    enable: false
 
-management:
-  endpoints:
-    web:
-      exposure:
-        include: refresh
+fileprocessor:
+  inbox : /var/lib/data/iadata_inbox
+  readyToIngestExtension: "readyToIngest"
+  processingExtension: "processing"
+  processedExtension: "processed"
+  cronFileProcessorDirWatcher: "*/5 * * ? * ? *"
+
