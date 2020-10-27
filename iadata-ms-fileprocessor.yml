@@ -17,7 +17,7 @@ spring:
 # Files dir
 app:
   scheduling:
-    enable: false
+    enable: true
 
 fileprocessor:
   inbox : /iadata_inbox
