@@ -14,3 +14,9 @@ spring:
     producer:
       bootstrap-servers: kafka-1:9092
       value-serializer: org.apache.kafka.common.serialization.StringSerializer
+fileprocessor:
+  inbox: C:\\iadata_inbox
+  readyToIngestExtension: "readyToIngest"
+  processingExtension: "processing"
+  processedExtension: "processed"
+  cronFileProcessorDirWatcher: "*/5 * * ? * ?"
