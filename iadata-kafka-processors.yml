@@ -30,7 +30,7 @@ jasypt:
     stringOutputType: base64
 ---
 kafkaConfig:
-  pollingCronExpression: "0/30 * * * * ?"
+  pollingCronExpression: "*/30 * * ? * ?"
 ---
 ingest:
   upload:
