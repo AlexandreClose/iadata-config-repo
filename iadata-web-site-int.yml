@@ -10,9 +10,9 @@ elastic:
   port: 1443
   useSSL: true
   securityType: apiKey
-  technicalApiKeyBase64: OU5jWjUzSUJPSkZlaVFTS0M1UFk6VDFMR2o0TXNUV21MZXExLXRpbEt1Zw==
+  technicalApiKeyBase64: aVJBeFRYWUJHcUxrTERISGVrY0U6M2xZTDhhWkFRR2FweE5rVVZhcG52QQ==
   commonPassword: aWP'kzr'c>`68=WM
-  visitorApiKeyBase64: eXhmRDJIUUJ2Q1ZZUVBzMW1YY246NjRWZmdwdnhSdE9EdHd1X2JmeE1yZw==
+  visitorApiKeyBase64: RUJBOFRYWUJHcUxrTERISGFVX0M6Yll6amJhTnVTaXFTVVZRM19VbU5GQQ==
 
 siteback:
   api:
