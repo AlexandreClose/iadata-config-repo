@@ -13,8 +13,8 @@ elastic:
   securityType: apiKey
   username:
   pass:
-  apikey: T1LGj4MsTWmLeq1-tilKug
-  apiid: 9NcZ53IBOJFeiQSKC5PY
+  apikey: nj8canYBGqLkLDHHYAHr 
+  apiid: TH739wtXSnqR_kI9-_M8Ow
   host: iadata-internal-proxy
   port: 1443
 ---
