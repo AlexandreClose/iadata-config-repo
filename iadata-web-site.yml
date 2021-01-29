@@ -43,3 +43,6 @@ siteback:
   api:
     userid:
       transform: NONE
+  admin:
+    role:
+      name: role_user_dn
