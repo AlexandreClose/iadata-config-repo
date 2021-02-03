@@ -6,6 +6,8 @@ spring:
 api:
   data:
     url: "https://iadata-dev.applis.intra/api/models"
+    securityHeaderName: ApiKey
+    securityHeaderValue: "QkszUHIzUUJXX1c3RTNWYWIxNkM6N2ZJanhjUDlURE9PLS1UWEZab25MUQ=="
 ---
 elastic:
   useSSL: true

@@ -6,6 +6,8 @@ spring:
 api:
   data:
     url: "http://iadata-internal-proxy:1444/api/models"
+    securityHeaderName: ApiKey
+    securityHeaderValue: "TVg2NkNuUUIwMVVlb2M5bXUwbl86Ujl2aTZjeHlSX3kzY1AwcHgwTDN5Zw=="
 ---
 elastic:
   useSSL: true
