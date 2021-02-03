@@ -46,3 +46,6 @@ siteback:
   admin:
     role:
       name: role_user_dn
+  superuser:
+    role:
+      name: superuser

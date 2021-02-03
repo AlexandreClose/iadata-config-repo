@@ -3,7 +3,7 @@ spring:
   main:
     web-environment: false
 
-# Choose the frequency on the HTTP call (default : every minute )
+# Choose the updateDelay on the HTTP call (default : every minute )
 dataFetcher:
   pollingCronExpression: ${POLLING_CRON_EXPRESSION:0 * * * * ?}
 
