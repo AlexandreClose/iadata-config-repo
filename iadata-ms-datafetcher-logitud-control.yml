@@ -7,6 +7,8 @@ spring:
 dataFetcher:
   pollingCronExpression: '-' # this disable the cron
   scheduleMode: only_once
+  fetchMode: range
+  prepareDataServiceMode: jsonArraySplitter
   behindProxy: true
   proxyHostEnvName: PROXY_HOST
   proxyPortEnvName: PROXY_PORT
