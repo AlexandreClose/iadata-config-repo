@@ -1,8 +1,0 @@
-# sending to ingest pipeline properties
-ingest:
-  ingestMode: api
-  brokerIngestHost: kafka-1
-  brokerIngestPort: 9092
-  urlApiIngest: https://iadata-dev-ingest.applis.intra/v2/
-  tokenApiIngest: eUV3a25uSUJlXzZ6Umk1T25FZFY6NEZjRzlmbF9UcTZvX2RUb2VUcDNmdw
-
