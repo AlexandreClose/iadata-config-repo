@@ -39,3 +39,5 @@ dateRangeProvider:
   dateStart:
     value: 01/07/2020
     format: 'dd/MM/yyyy'
+  output:
+    format: "yyyy-MM-dd'T'HH:mm:ss"
