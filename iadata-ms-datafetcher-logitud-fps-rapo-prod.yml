@@ -1,0 +1,6 @@
+# sending to ingest pipeline properties
+ingest:
+  ingestMode: api
+  urlApiIngest: "https://iadata-ingest.toulouse-metropole.fr/v2/"
+  tokenApiIngest: "TVg2NkNuUUIwMVVlb2M5bXUwbl86Ujl2aTZjeHlSX3kzY1AwcHgwTDN5Zw=="
+  ingestTopic: data-pm-logitud-fps-rapo
