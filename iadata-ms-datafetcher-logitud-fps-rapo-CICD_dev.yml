@@ -1,0 +1,6 @@
+# sending to ingest pipeline properties
+ingest:
+  ingestMode: api
+  urlApiIngest: "https://iadata-dev-ingest.applis.intra/v2/"
+  tokenApiIngest: "QkszUHIzUUJXX1c3RTNWYWIxNkM6N2ZJanhjUDlURE9PLS1UWEZab25MUQ=="
+  ingestTopic: data-pm-logitud-fps-rapo

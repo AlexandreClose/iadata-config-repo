@@ -1,0 +1,47 @@
+
+
+# disable embedded tomcat
+spring:
+  main:
+    web-environment: false
+ingest:
+  ingestMode: api
+  urlApiIngest: "https://iadata-dev-ingest.applis.intra/v2/"
+  tokenApiIngest: "token"
+  ingestTopic: data-pm-logitud-fps-rapo
+
+# Choose the updateDelay on the HTTP call (default : every minute )
+dataFetcher:
+  pollingCronExpression: '-' # this disable the cron
+  behindProxy: false
+  proxyHostEnvName: PROXY_HOST
+  proxyPortEnvName: PROXY_PORT
+  proxyUserNameEnvName: PROXY_USERNAME
+  proxyPasswordEnvName: PROXY_PASSWORD
+
+# apifetcher properties
+apiConsume:
+  loginRawData: "{\"username\":\"statistique\",\"password\":\"*Stat!68\"}"
+  urlLogin: https://services.logitud.fr/toulouse-asvp/auth-server/login/
+  cookieLoginName: sid
+  urlApiConsume: https://services.logitud.fr/toulouse-asvp/security/rapo-server/api/fps
+  loginApiConsume:
+  passwordApiConsume:
+  securityTypeApiConsume: json
+  method: post
+  customHeaders:
+    Content-Type : application/json
+    uuid : 8950A6F5-A792-4AD4-880D-005809356708
+  body:
+    jsonBody:
+    objectFromPath:
+    objectToPath:
+  responseType: json
+  jsonPathData: "$['matches']"
+
+dateRangeProvider:
+  dateStart:
+    value: 23/01/2021
+    format: 'dd/MM/yyyy'
+  output:
+    format: "yyyy-MM-dd'T'HH:mm:ss"
