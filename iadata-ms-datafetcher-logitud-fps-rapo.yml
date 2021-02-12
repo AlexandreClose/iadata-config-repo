@@ -27,8 +27,8 @@ apiConsume:
   securityTypeApiConsume: json
   method: post
   customHeaders:
-    Content-Type: application/json
-      href-base: /toulouse-asvp/security/rapo
+    Content-Type: 'application/json'
+    href-base: '/toulouse-asvp/security/rapo'
   body: ''
   responseType: json
   jsonPathData: "$['matches']"
