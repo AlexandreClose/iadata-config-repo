@@ -5,14 +5,16 @@ spring:
 
 # Choose the updateDelay on the HTTP call (default : every minute )
 dataFetcher:
-  pollingCronExpression: '-' # this disable the cron
-  scheduleMode: only_once
-  fetchMode: range
+  pollingCronExpression: '0 0 0 * * ?'
+  prepareDataServiceMode: jsonArraySplitter
+  scheduleMode: scheduled
+  fetchMode: custom
   behindProxy: true
   proxyHostEnvName: PROXY_HOST
   proxyPortEnvName: PROXY_PORT
   proxyUserNameEnvName: PROXY_USERNAME
   proxyPasswordEnvName: PROXY_PASSWORD
+  recoverObjectStartPath: /datafetcher_config/recoverObjectStart.config
 
 # apifetcher properties
 apiConsume:
@@ -27,16 +29,10 @@ apiConsume:
   customHeaders:
     Content-Type : application/json
     uuid : 8950A6F5-A792-4AD4-880D-005809356708
-  body:
-    jsonBody:
-    objectFromPath:
-    objectToPath:
+  body: ''
   responseType: json
   jsonPathData: "$['matches']"
-
-dateRangeProvider:
-  dateStart:
-    value: 23/01/2021
-    format: 'dd/MM/yyyy'
-  output:
-    format: "yyyy-MM-dd'T'HH:mm:ss"
+rangeprovider:
+  valueStart: 01/07/2020
+  formatStart: 'dd/MM/yyyy'
+  formatOutput: "yyyy-MM-dd'T'HH:mm:ss"

@@ -28,16 +28,11 @@ apiConsume:
   customHeaders:
     Content-Type : application/json
     uuid : 8950A6F5-A792-4AD4-880D-005809356708
-  body:
-    jsonBody: '{"context":"gvs.control","dateFrom":"@@@","dateTo":"@@@"}'
-    objectFromPath: "$['dateFrom']"
-    objectToPath: "$['dateTo']"
+  body: '{"context":"gvs.control","dateFrom":"@@@from@@@","dateTo":"@@@to@@@@"}'
   responseType: json
   jsonPathData: "$['matches']"
 
-dateRangeProvider:
-  dateStart:
-    value: 01/07/2020
-    format: 'dd/MM/yyyy'
-  output:
-    format: "yyyy-MM-dd'T'HH:mm:ss"
+rangeprovider:
+  valueStart: 01/07/2020
+  formatStart: 'dd/MM/yyyy'
+  formatOutput: "yyyy-MM-dd'T'HH:mm:ss"
