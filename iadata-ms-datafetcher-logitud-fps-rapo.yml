@@ -27,8 +27,8 @@ apiConsume:
   securityTypeApiConsume: json
   method: post
   customHeaders:
-    Content-Type : application/json
-    uuid : 8950A6F5-A792-4AD4-880D-005809356708
+    Content-Type: application/json
+      href-base: /toulouse-asvp/security/rapo
   body: ''
   responseType: json
   jsonPathData: "$['matches']"
