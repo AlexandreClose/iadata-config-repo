@@ -14,6 +14,7 @@ dataFetcher:
   proxyPortEnvName: PROXY_PORT
   proxyUserNameEnvName: PROXY_USERNAME
   proxyPasswordEnvName: PROXY_PASSWORD
+  recoverObjectStartPath: /datafetcher_config/iadata-datafetcher-logitud-control-recover.config
 
 # apifetcher properties
 apiConsume:
