@@ -16,6 +16,7 @@ dataFetcher:
   proxyPasswordEnvName: PROXY_PASSWORD
   recoverObjectStartPath: /datafetcher_config/recoverObjectStart.config
 
+
 # apifetcher properties
 apiConsume:
   loginRawData: "{\"username\":\"statistique\",\"password\":\"*Stat!68\"}"
