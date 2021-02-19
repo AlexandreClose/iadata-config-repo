@@ -17,3 +17,8 @@ siteback:
   api:
     userid:
       transform: LOWERCASE
+streamsapi:
+  baseUri: https://iadata-dev.applis.intra:443/admin/api/ingest/streams/
+  pathStart: start
+  pathStop: stop
+  pathRestart: restart
