@@ -34,5 +34,5 @@ apiConsume:
   jsonPathData: "$['matches']"
 
 daterangeprovider:
-  valueStart: 01/07/2020T00:00:00
+  valueStart: 2020-07-01T00:00:00
   format: "yyyy-MM-dd'T'HH:mm:ss"
