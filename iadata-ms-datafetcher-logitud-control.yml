@@ -29,7 +29,7 @@ apiConsume:
   customHeaders:
     Content-Type : application/json
     uuid : 8950A6F5-A792-4AD4-880D-005809356708
-  body: '{"context":"gvs.control","dateFrom":"@@@from@@@","dateTo":"@@@to@@@@"}'
+  body: '{"context":"gvs.control","dateFrom":"@@@from@@@","dateTo":"@@@to@@@"}'
   responseType: json
   jsonPathData: "$['matches']"
 
