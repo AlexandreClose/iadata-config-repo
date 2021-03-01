@@ -34,6 +34,5 @@ apiConsume:
   responseType: json
   jsonPathData: "$['matches']"
 daterangeprovider:
-  valueStart: 26/11/2020
-  formatStart: 'dd/MM/yyyy'
-  formatOutput: "yyyy-MM-dd'T'HH:mm:ss'Z'"
+  valueStart: 26/11/2020T00:00:00Z
+  format: "yyyy-MM-dd'T'HH:mm:ss'Z'"
