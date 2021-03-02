@@ -2,6 +2,7 @@
 ingest:
   ingestMode: api
   #urlApiIngest: "https://iadata-ingest.toulouse-metropole.fr/v2/"
-  urlApiIngest: "https://api-iadata.toulouse-metropole.fr/v2/"
+  #urlApiIngest: "https://api-iadata.toulouse-metropole.fr/v2/"
+  urlApiIngest: "https://iadata.applis.toulouse-metropole.fr/v2/"
   tokenApiIngest: "TVg2NkNuUUIwMVVlb2M5bXUwbl86Ujl2aTZjeHlSX3kzY1AwcHgwTDN5Zw=="
   ingestTopic: data-pm-logitud-control
