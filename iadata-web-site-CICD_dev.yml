@@ -4,14 +4,24 @@
 
 #Elastic conf
 elastic:
-  scheme: https
-  host: iadata-dev-ingest.applis.intra
-  port: 10443
-  useSSL: true
-  securityType: apiKey
+  scheme: http
+  host: localhost
+  port: 9200
+  useSSL: false
+  securityType: none
   technicalApiKeyBase64: QkszUHIzUUJXX1c3RTNWYWIxNkM6N2ZJanhjUDlURE9PLS1UWEZab25MUQ==
   commonPassword: 97@Z&$Nmy(HX.QU~
   visitorApiKeyBase64: bXI0dUJuUUJrNmo1dk50bmh3OTc6ME5LYVE4dVJUUHFjVGVnV19ZejJFZw==
+
+#elastic:
+#  scheme: https
+ # host: iadata-dev-ingest.applis.intra
+  #port: 10443
+  #useSSL: true
+  #securityType: apiKey
+  #technicalApiKeyBase64: QkszUHIzUUJXX1c3RTNWYWIxNkM6N2ZJanhjUDlURE9PLS1UWEZab25MUQ==
+  #commonPassword: 97@Z&$Nmy(HX.QU~
+  #visitorApiKeyBase64: bXI0dUJuUUJrNmo1dk50bmh3OTc6ME5LYVE4dVJUUHFjVGVnV19ZejJFZw==
 
 siteback:
   api:
