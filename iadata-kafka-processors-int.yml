@@ -7,7 +7,7 @@ api:
   data:
     url: "http://iadata-internal-proxy:1444/api/models"
     securityHeaderName: ApiKey
-    securityHeaderValue: "bmo4Y2FuWUJHcUxrTERISFlBSHI6VEg3Mzl3dFhTbnFSX2tJOS1fTThPdw=="
+    securityHeaderValue: "V2s3bEVIZ0IxRXBVWnBVN1RScGU6SUd2N1JhN09ScnF2ZlRDeW9IaUx5QQ=="
 
 ---
 elastic:
@@ -15,8 +15,8 @@ elastic:
   securityType: apiKey
   username:
   pass:
-  apikey: nj8canYBGqLkLDHHYAHr 
-  apiid: TH739wtXSnqR_kI9-_M8Ow
+  apikey: IGv7Ra7ORrqvfTCyoHiLyA 
+  apiid: Wk7lEHgB1EpUZpU7TRpe
   host: iadata-internal-proxy
   port: 1443
 ---
@@ -28,7 +28,4 @@ logging:
           elasticsearch:
             core: DEBUG
     tracer: TRACE
-
-
-
 
