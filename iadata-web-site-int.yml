@@ -1,13 +1,16 @@
-#logging:
-#  level:
-#    org.springframework.data.elasticsearch.core: DEBUG
-#    tracer: TRACE
+
+#Elastic Logs
+logging:
+  level:
+    org.springframework.data.elasticsearch.core: DEBUG
+    tracer: TRACE
+    fr.toulouse.iadata: DEBUG
 
 #Elastic conf
 elastic:
   scheme: https
-  host: iadata-internal-proxy
-  port: 1443
+  host: iadata-ingest.integration.toulouse-metropole.fr
+  port: 4443
   useSSL: true
   securityType: apiKey
   technicalApiKeyBase64: V2s3bEVIZ0IxRXBVWnBVN1RScGU6SUd2N1JhN09ScnF2ZlRDeW9IaUx5QQ== 
