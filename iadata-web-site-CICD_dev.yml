@@ -22,3 +22,14 @@ streamsapi:
   pathStart: start
   pathStop: stop
   pathRestart: restart
+
+# apifetcher properties
+apiConsume:
+  customHeaders:
+    ApiKey: QkszUHIzUUJXX1c3RTNWYWIxNkM6N2ZJanhjUDlURE9PLS1UWEZab25MUQ==
+paginaterangeprovider:
+  valueStart: 0
+ingest:
+  ingestMode: api
+  urlApiIngest: "https://iadata-dev-ingest.applis.intra/v2/"
+  tokenApiIngest: "QkszUHIzUUJXX1c3RTNWYWIxNkM6N2ZJanhjUDlURE9PLS1UWEZab25MUQ=="

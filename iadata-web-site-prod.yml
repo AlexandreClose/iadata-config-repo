@@ -17,3 +17,14 @@ siteback:
   api:
     userid:
       transform: LOWERCASE
+
+# apifetcher properties
+apiConsume:
+  customHeaders:
+    ApiKey: TVg2NkNuUUIwMVVlb2M5bXUwbl86Ujl2aTZjeHlSX3kzY1AwcHgwTDN5Zw==
+paginaterangeprovider:
+  valueStart: 0
+ingest:
+  ingestMode: api
+  urlApiIngest: "https://iadata-ingest.applis.toulouse-metropole.fr/v2/"
+  tokenApiIngest: "TVg2NkNuUUIwMVVlb2M5bXUwbl86Ujl2aTZjeHlSX3kzY1AwcHgwTDN5Zw=="
