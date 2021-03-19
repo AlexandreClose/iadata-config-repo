@@ -36,9 +36,16 @@ ingest:
   upload:
     dir: D:\
 ---
-api:
-  data:
-    url: "http://localhost:8098/api/models/"
+apidata:
+  url: "http://localhost:8098/api/v1/entities/"
+  securityHeaderName: ApiKey
+  securityHeaderValue: "QkszUHIzUUJXX1c3RTNWYWIxNkM6N2ZJanhjUDlURE9PLS1UWEZab25MUQ=="
+---
+apimodels:
+  url: "http://localhost:8098/api/models/"
+  securityHeaderName: ApiKey
+  securityHeaderValue: "QkszUHIzUUJXX1c3RTNWYWIxNkM6N2ZJanhjUDlURE9PLS1UWEZab25MUQ=="
+
 ---
 elastic:
   useSSL: false

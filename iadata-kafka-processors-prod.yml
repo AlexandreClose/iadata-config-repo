@@ -3,11 +3,15 @@ spring:
     bootstrap-servers:
       - ${KAFKA_HOST:10.198.0.91}:${KAFKA_PORT:9094}
 ---
-api:
-  data:
-    url: "http://iadata-internal-proxy:1444/api/models"
-    securityHeaderName: ApiKey
-    securityHeaderValue: "TVg2NkNuUUIwMVVlb2M5bXUwbl86Ujl2aTZjeHlSX3kzY1AwcHgwTDN5Zw=="
+apidata:
+  url: "http://iadata-internal-proxy:1444/api/v1/entities/"
+  securityHeaderName: ApiKey
+  securityHeaderValue: "TVg2NkNuUUIwMVVlb2M5bXUwbl86Ujl2aTZjeHlSX3kzY1AwcHgwTDN5Zw=="
+---
+apimodels:
+  url: "http://iadata-internal-proxy:1444/api/models/"
+  securityHeaderName: ApiKey
+  securityHeaderValue: "TVg2NkNuUUIwMVVlb2M5bXUwbl86Ujl2aTZjeHlSX3kzY1AwcHgwTDN5Zw=="
 ---
 elastic:
   useSSL: true
