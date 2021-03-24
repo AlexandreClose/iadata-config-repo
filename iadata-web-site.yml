@@ -68,7 +68,7 @@ streamsapi:
     proxyPortEnvName: PROXY_PORT
     proxyUserNameEnvName: PROXY_USERNAME
     proxyPasswordEnvName: PROXY_PASSWORD
-    recoverObjectStartPath: /datafetcher_config/iadata-web-site-recover.config
+    recoverObjectStartDir: /datafetcher_config/
 
   # apifetcher properties
   apiConsume:
