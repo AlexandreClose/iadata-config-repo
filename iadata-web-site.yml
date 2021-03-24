@@ -57,18 +57,18 @@ streamsapi:
   pathRestart: restart
 
   # Choose the updateDelay on the HTTP call (default : every minute )
-  dataFetcher:
-    pollingCronExpression: '-'
-    prepareDataServiceMode: jsonArrayPropertyGetterSplitter
-    propertyToExtract: originalRawData
-    scheduleMode: none
-    fetchMode: custom
-    behindProxy: false
-    proxyHostEnvName: PROXY_HOST
-    proxyPortEnvName: PROXY_PORT
-    proxyUserNameEnvName: PROXY_USERNAME
-    proxyPasswordEnvName: PROXY_PASSWORD
-    recoverObjectStartDir: /datafetcher_config/
+dataFetcher:
+  pollingCronExpression: '-'
+  prepareDataServiceMode: jsonArrayPropertyGetterSplitter
+  propertyToExtract: originalRawData
+  scheduleMode: none
+  fetchMode: custom
+  behindProxy: false
+  proxyHostEnvName: PROXY_HOST
+  proxyPortEnvName: PROXY_PORT
+  proxyUserNameEnvName: PROXY_USERNAME
+  proxyPasswordEnvName: PROXY_PASSWORD
+  recoverObjectStartDir: /datafetcher_config/
 
   # apifetcher properties
   apiConsume:
