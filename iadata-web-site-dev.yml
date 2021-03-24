@@ -1,9 +1,9 @@
 #Elastic Logs
-logging:
-  level:
+#logging:
+#  level:
     #org.springframework.data.elasticsearch.core: DEBUG
     #tracer: TRACE
-    fr.toulouse.iadata: DEBUG
+#    fr.toulouse.iadata: DEBUG
 
 #Elastic conf
 elastic:
