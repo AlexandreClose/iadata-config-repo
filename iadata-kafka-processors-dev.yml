@@ -1,3 +1,7 @@
+logging:
+  level:
+    fr.toulouse.iadata: DEBUG
+
 spring:
   kafka:
     bootstrap-servers:
