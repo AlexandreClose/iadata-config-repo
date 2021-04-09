@@ -31,8 +31,8 @@ elastic:
   port: 9200
   useSSL: false
   securityType: none
-  username:
-  pass:
+  username: elastic
+  pass: pwdElastic@2020
   technicalApiKeyBase64:
   userPrefix: ta_
   commonPassword:
