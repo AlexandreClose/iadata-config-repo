@@ -39,6 +39,10 @@ elastic:
   visitorUserId: visitor
   visitorApiKeyBase64:
 
+microservice:
+  registry: iadata-mgr.applis.intra:5000
+
+
 siteback:
   api:
     userid:
