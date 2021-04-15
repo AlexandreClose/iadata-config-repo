@@ -40,7 +40,10 @@ elastic:
   visitorApiKeyBase64:
 
 microservice:
+  daemon:
   registry: iadata-mgr.applis.intra:5000
+  network: swarm-iadata_dmz
+
 
 
 siteback:
