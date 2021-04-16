@@ -13,6 +13,11 @@ elastic:
   commonPassword: 97@Z&$Nmy(HX.QU~
   visitorApiKeyBase64: bXI0dUJuUUJrNmo1dk50bmh3OTc6ME5LYVE4dVJUUHFjVGVnV19ZejJFZw==
 
+microservice:
+  daemon: tcp://ld2iat001i:2375
+  registry: iadata-mgr.applis.intra:5000
+  network: swarm-iadata_dmz
+
 siteback:
   api:
     userid:
