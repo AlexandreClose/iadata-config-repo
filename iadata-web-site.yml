@@ -44,9 +44,12 @@ microservice:
   registry: iadata-mgr.applis.intra:5000
   network: swarm-iadata_dmz
 
+pipeline:
+  maxDumpsNumber: 3
 
 
 siteback:
+  outputDir: \iadata_outbox\
   api:
     userid:
       transform: NONE
