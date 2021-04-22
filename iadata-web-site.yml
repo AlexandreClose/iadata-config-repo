@@ -6,6 +6,8 @@ server:
     include-stacktrace: NEVER
 
 spring:
+  autoconfigure:
+    exclude: org.springframework.boot.actuate.autoconfigure.elasticsearch.ElasticSearchReactiveHealthContributorAutoConfiguration,org.springframework.boot.autoconfigure.data.elasticsearch.ReactiveElasticsearchRepositoriesAutoConfiguration,org.springframework.boot.autoconfigure.data.elasticsearch.ReactiveElasticsearchRestClientAutoConfiguration
   security:
     user:
       name: log
