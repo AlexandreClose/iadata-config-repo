@@ -10,13 +10,13 @@ spring:
 ---
 apidata:
   url: "http://iadata-internal-proxy:1444/api/v1/entities/"
-  securityHeaderName: ApiKey
-  securityHeaderValue: "QkszUHIzUUJXX1c3RTNWYWIxNkM6N2ZJanhjUDlURE9PLS1UWEZab25MUQ=="
+  securityHeaderName: Authorization
+  securityHeaderValue: "ApiKey QkszUHIzUUJXX1c3RTNWYWIxNkM6N2ZJanhjUDlURE9PLS1UWEZab25MUQ=="
 ---
 apimodels:
   url: "http://iadata-internal-proxy:1444/api/models/"
-  securityHeaderName: ApiKey
-  securityHeaderValue: "QkszUHIzUUJXX1c3RTNWYWIxNkM6N2ZJanhjUDlURE9PLS1UWEZab25MUQ=="
+  securityHeaderName: Authorization
+  securityHeaderValue: "ApiKey QkszUHIzUUJXX1c3RTNWYWIxNkM6N2ZJanhjUDlURE9PLS1UWEZab25MUQ=="
 ---
 elastic:
   useSSL: true
