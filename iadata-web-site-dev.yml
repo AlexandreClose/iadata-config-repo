@@ -21,6 +21,8 @@ siteback:
     userid:
       transform: LOWERCASE
 
+microservice:
+  daemon: tcp://iadata-dev.applis.intra:2375
 # apifetcher properties
 apiConsume:
   customHeaders:
