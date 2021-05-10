@@ -26,7 +26,7 @@ microservice:
 # apifetcher properties
 apiConsume:
   customHeaders:
-    ApiKey: QkszUHIzUUJXX1c3RTNWYWIxNkM6N2ZJanhjUDlURE9PLS1UWEZab25MUQ==
+    Bearer: QkszUHIzUUJXX1c3RTNWYWIxNkM6N2ZJanhjUDlURE9PLS1UWEZab25MUQ==
 paginaterangeprovider:
   valueStart: 0
 ingest:

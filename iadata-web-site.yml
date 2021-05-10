@@ -94,7 +94,7 @@ dataFetcher:
     method: get
     customHeaders:
       Content-Type: 'application/json'
-      ApiKey: QkszUHIzUUJXX1c3RTNWYWIxNkM6N2ZJanhjUDlURE9PLS1UWEZab25MUQ==
+      Bearer: QkszUHIzUUJXX1c3RTNWYWIxNkM6N2ZJanhjUDlURE9PLS1UWEZab25MUQ==
     body: ''
     responseType: json
     jsonPathData: "$['content']"
