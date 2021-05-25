@@ -5,7 +5,7 @@ spring:
 
 # Choose the updateDelay on the HTTP call (default : every minute )
 dataFetcher:
-  pollingCronExpression: '0 0 */3 * * ?'
+  pollingCronExpression: '-'
   prepareDataServiceMode: jsonArraySplitter
   scheduleMode: only_once
   fetchMode: custom
