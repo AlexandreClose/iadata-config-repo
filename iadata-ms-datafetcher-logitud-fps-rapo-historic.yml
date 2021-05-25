@@ -1,0 +1,38 @@
+# disable embedded tomcat
+spring:
+  main:
+    web-environment: false
+
+# Choose the updateDelay on the HTTP call (default : every minute )
+dataFetcher:
+  pollingCronExpression: '0 0 */3 * * ?'
+  prepareDataServiceMode: jsonArraySplitter
+  scheduleMode: only_once
+  fetchMode: custom
+  behindProxy: true
+  proxyHostEnvName: PROXY_HOST
+  proxyPortEnvName: PROXY_PORT
+  proxyUserNameEnvName: PROXY_USERNAME
+  proxyPasswordEnvName: PROXY_PASSWORD
+  recoverObjectStartPath: /datafetcher_config/iadata-datafetcher-logitud-fps-rapo-historic-recover.config
+
+
+# apifetcher properties
+apiConsume:
+  loginRawData: "{\"username\":\"statistique\",\"password\":\"*Stat!68\"}"
+  urlLogin: https://services.logitud.fr/toulouse-asvp/auth-server/login/
+  cookieLoginName: sid
+  urlApiConsume: https://services.logitud.fr/toulouse-asvp/security/rapo-server/api/fps
+  loginApiConsume:
+  passwordApiConsume:
+  securityTypeApiConsume: json
+  method: post
+  customHeaders:
+    Content-Type: 'application/json'
+    href-base: '/toulouse-asvp/security/rapo'
+  body: ''
+  responseType: json
+  jsonPathData: "$['matches']"
+daterangeprovider:
+  valueStart: 2020-05-26T00:00:00Z
+  format: "yyyy-MM-dd'T'HH:mm:ss'Z'"

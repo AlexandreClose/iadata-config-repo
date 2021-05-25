@@ -1,0 +1,7 @@
+# sending to ingest pipeline properties
+ingest:
+  ingestMode: api-data
+  urlApiIngest: https://api-iadata.integration.toulouse-metropole.fr/api/v2/entities/batch/
+  tokenApiIngest: V2s3bEVIZ0IxRXBVWnBVN1RScGU6SUd2N1JhN09ScnF2ZlRDeW9IaUx5QQ
+  ingestGroupAppName: pm
+  ingestAppName: logitud-fps-rapo

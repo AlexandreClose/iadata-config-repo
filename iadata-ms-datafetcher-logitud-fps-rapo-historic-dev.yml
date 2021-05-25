@@ -1,0 +1,7 @@
+# sending to ingest pipeline properties
+ingest:
+  ingestMode: api-data
+  urlApiIngest: https://iadata-dev.applis.intra:10444/api/v2/entities/batch/
+  tokenApiIngest: QkszUHIzUUJXX1c3RTNWYWIxNkM6N2ZJanhjUDlURE9PLS1UWEZab25MUQ
+  ingestGroupAppName: pm
+  ingestAppName: logitud-fps-rapo
