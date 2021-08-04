@@ -9,7 +9,7 @@ spring:
 
 ---
 apidata:
-  url: "http://iadata-internal-proxy:1444/api/v1/entities/"
+  url: "http://iadata-internal-proxy:1444/api/v2/entities/"
   securityHeaderName: Authorization
   securityHeaderValue: "Bearer QkszUHIzUUJXX1c3RTNWYWIxNkM6N2ZJanhjUDlURE9PLS1UWEZab25MUQ=="
 ---
