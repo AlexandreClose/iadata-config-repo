@@ -38,8 +38,8 @@ ingest:
 ---
 apidata:
   url: "http://localhost:8098/api/v2/entities/"
-  securityHeaderName: Bearer
-  securityHeaderValue: "QkszUHIzUUJXX1c3RTNWYWIxNkM6N2ZJanhjUDlURE9PLS1UWEZab25MUQ=="
+  securityHeaderName: Authorization
+  securityHeaderValue: "Bearer QkszUHIzUUJXX1c3RTNWYWIxNkM6N2ZJanhjUDlURE9PLS1UWEZab25MUQ=="
 ---
 apimodels:
   url: "http://localhost:8098/api/models/"
