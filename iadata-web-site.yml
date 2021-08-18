@@ -67,7 +67,7 @@ siteback:
       name: superuser
 
 streamsapi:
-  baseUri: http://iadata-internal-proxy:1445/api/ingest/streams/
+  baseUri: http://iadata-internal-proxy:1445/api/
   pathStart: start
   pathStop: stop
   pathRestart: restart
