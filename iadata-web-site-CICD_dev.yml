@@ -24,7 +24,7 @@ siteback:
     userid:
       transform: LOWERCASE
 streamsapi:
-  baseUri: https://iadata-dev.applis.intra:10445/admin/api/
+  baseUri: https://iadata-dev.applis.intra:10445/api/
   pathStart: start
   pathStop: stop
   pathRestart: restart
