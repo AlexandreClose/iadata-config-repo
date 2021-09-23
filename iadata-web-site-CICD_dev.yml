@@ -14,7 +14,7 @@ elastic:
   visitorApiKeyBase64: bXI0dUJuUUJrNmo1dk50bmh3OTc6ME5LYVE4dVJUUHFjVGVnV19ZejJFZw==
 
 microservice:
-  daemon:
+  daemon: tcp://iadata-dev.applis.intra:2375
   registry: iadata-mgr.applis.intra:5000
   network: swarm-iadata_dmz
 
@@ -24,7 +24,7 @@ siteback:
     userid:
       transform: LOWERCASE
 streamsapi:
-  baseUri: https://iadata-dev.applis.intra:443/admin/api/ingest/streams/
+  baseUri: https://iadata-dev.applis.intra:10445/api/
   pathStart: start
   pathStop: stop
   pathRestart: restart
@@ -32,7 +32,7 @@ streamsapi:
 # apifetcher properties
 apiConsume:
   customHeaders:
-    ApiKey: QkszUHIzUUJXX1c3RTNWYWIxNkM6N2ZJanhjUDlURE9PLS1UWEZab25MUQ==
+    Bearer: QkszUHIzUUJXX1c3RTNWYWIxNkM6N2ZJanhjUDlURE9PLS1UWEZab25MUQ==
 paginaterangeprovider:
   valueStart: 0
 ingest:

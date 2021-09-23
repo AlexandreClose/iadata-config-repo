@@ -21,10 +21,16 @@ siteback:
   api:
     userid:
       transform: LOWERCASE
+
+
+microservice:
+  daemon: tcp://iadata.integration.toulouse-metropole.fr:2375
+
+
 # apifetcher properties
 apiConsume:
   customHeaders:
-    ApiKey: V2s3bEVIZ0IxRXBVWnBVN1RScGU6SUd2N1JhN09ScnF2ZlRDeW9IaUx5QQ==
+    Bearer: V2s3bEVIZ0IxRXBVWnBVN1RScGU6SUd2N1JhN09ScnF2ZlRDeW9IaUx5QQ==
 paginaterangeprovider:
   valueStart: 0
 ingest:

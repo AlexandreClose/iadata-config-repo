@@ -4,14 +4,14 @@ spring:
       - ${KAFKA_HOST:10.198.0.91}:${KAFKA_PORT:9094}
 ---
 apidata:
-  url: "http://iadata-internal-proxy:1444/api/v1/entities/"
+  url: "http://iadata-internal-proxy:1444/api/v2/entities/"
   securityHeaderName: Authorization
-  securityHeaderValue: "ApiKey V2s3bEVIZ0IxRXBVWnBVN1RScGU6SUd2N1JhN09ScnF2ZlRDeW9IaUx5QQ=="
+  securityHeaderValue: "Bearer V2s3bEVIZ0IxRXBVWnBVN1RScGU6SUd2N1JhN09ScnF2ZlRDeW9IaUx5QQ=="
 ---
 apimodels:
   url: "http://iadata-internal-proxy:1444/api/models/"
   securityHeaderName: Authorization
-  securityHeaderValue: "ApiKey V2s3bEVIZ0IxRXBVWnBVN1RScGU6SUd2N1JhN09ScnF2ZlRDeW9IaUx5QQ=="
+  securityHeaderValue: "Bearer V2s3bEVIZ0IxRXBVWnBVN1RScGU6SUd2N1JhN09ScnF2ZlRDeW9IaUx5QQ=="
 
 ---
 elastic:

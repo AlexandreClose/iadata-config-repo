@@ -4,14 +4,14 @@ spring:
       - ${KAFKA_HOST:10.198.0.91}:${KAFKA_PORT:9094}
 ---
 apidata:
-  url: "https://iadata-dev.applis.intra:10444/api/v1/entities/"
+  url: "https://iadata-dev.applis.intra:10444/api/v2/entities/"
   securityHeaderName: Authorization
-  securityHeaderValue: "ApiKey QkszUHIzUUJXX1c3RTNWYWIxNkM6N2ZJanhjUDlURE9PLS1UWEZab25MUQ=="
+  securityHeaderValue: "Bearer QkszUHIzUUJXX1c3RTNWYWIxNkM6N2ZJanhjUDlURE9PLS1UWEZab25MUQ=="
 ---
 apimodels:
   url: "https://iadata-dev.applis.intra:10444/api/models/"
   securityHeaderName: Authorization
-  securityHeaderValue: "ApiKey QkszUHIzUUJXX1c3RTNWYWIxNkM6N2ZJanhjUDlURE9PLS1UWEZab25MUQ=="
+  securityHeaderValue: "Bearer QkszUHIzUUJXX1c3RTNWYWIxNkM6N2ZJanhjUDlURE9PLS1UWEZab25MUQ=="
 ---
 elastic:
   useSSL: true

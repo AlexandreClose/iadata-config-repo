@@ -4,7 +4,10 @@ server:
   error:
     include-message: ALWAYS
     include-stacktrace: NEVER
-
+  compression:
+    enabled: true
+    mime-types: text/html,text/xml,text/plain,text/css,text/javascript,application/javascript,application/json,application/font-woff2,application/octet-stream
+    min-response-size: 1024
 spring:
   autoconfigure:
     exclude: org.springframework.boot.actuate.autoconfigure.elasticsearch.ElasticSearchReactiveHealthContributorAutoConfiguration,org.springframework.boot.autoconfigure.data.elasticsearch.ReactiveElasticsearchRepositoriesAutoConfiguration,org.springframework.boot.autoconfigure.data.elasticsearch.ReactiveElasticsearchRestClientAutoConfiguration
@@ -15,6 +18,7 @@ spring:
   data:
     rest:
       basePath: /api/models
+
 
 management:
   health:
@@ -63,7 +67,7 @@ siteback:
       name: superuser
 
 streamsapi:
-  baseUri: http://iadata-internal-proxy:1445/api/ingest/streams/
+  baseUri: http://iadata-internal-proxy:1445/api/
   pathStart: start
   pathStop: stop
   pathRestart: restart
@@ -94,7 +98,7 @@ dataFetcher:
     method: get
     customHeaders:
       Content-Type: 'application/json'
-      ApiKey: QkszUHIzUUJXX1c3RTNWYWIxNkM6N2ZJanhjUDlURE9PLS1UWEZab25MUQ==
+      Bearer: QkszUHIzUUJXX1c3RTNWYWIxNkM6N2ZJanhjUDlURE9PLS1UWEZab25MUQ==
     body: ''
     responseType: json
     jsonPathData: "$['content']"
