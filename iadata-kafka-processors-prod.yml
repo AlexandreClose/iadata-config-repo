@@ -1,6 +1,6 @@
-logging:
-  level:
-    fr.toulouse.iadata: DEBUG
+#logging:
+#  level:
+#    fr.toulouse.iadata: DEBUG
  
 spring:
   kafka:
