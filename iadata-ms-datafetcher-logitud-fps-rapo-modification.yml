@@ -14,7 +14,7 @@ dataFetcher:
   proxyPortEnvName: PROXY_PORT
   proxyUserNameEnvName: PROXY_USERNAME
   proxyPasswordEnvName: PROXY_PASSWORD
-  recoverObjectStartPath: /datafetcher_config/iadata-datafetcher-logitud-fps-rapo-historic-recover.config
+  recoverObjectStartPath: /datafetcher_config/iadata-datafetcher-logitud-fps-rapo-modification-recover.config
 
 
 # apifetcher properties
@@ -39,4 +39,4 @@ daterangeprovider:
 
 
 fpsrapofetcher:
-  type: MODIFICATION
+  type: STATEMENT
