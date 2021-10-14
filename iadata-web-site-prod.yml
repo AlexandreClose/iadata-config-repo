@@ -20,6 +20,7 @@ siteback:
 
 spring:
   datasource:
+    url: jdbc:mysql://iadata.toulouse-metropole.fr:10446/iadata-config
     password: dWQNrwQhXDefFR73LNAGQpza
 
 
