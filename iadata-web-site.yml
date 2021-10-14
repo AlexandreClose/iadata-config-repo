@@ -21,7 +21,7 @@ spring:
 
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://iadata-internal-proxy:10446/iadata-config
+    url: jdbc:mysql://iadata-internal-proxy:1447/iadata-config
     username: tm-iadata-sql
     password: # to set depending on environment
   jpa:
