@@ -26,6 +26,10 @@ siteback:
 microservice:
   daemon: tcp://iadata.integration.toulouse-metropole.fr:2375
 
+spring:
+  datasource:
+    password: dWQNrwQhXDefFR73LNAGQpza
+
 
 # apifetcher properties
 apiConsume:

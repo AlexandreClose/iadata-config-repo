@@ -18,6 +18,10 @@ siteback:
     userid:
       transform: LOWERCASE
 
+spring:
+  datasource:
+    password: dWQNrwQhXDefFR73LNAGQpza
+
 
 
 microservice:

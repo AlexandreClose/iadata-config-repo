@@ -19,6 +19,18 @@ spring:
     rest:
       basePath: /api/models
 
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://iadata-internal-proxy:3306/iadata-config
+    username: tm-iadata-sql
+    password: # to set depending on environment
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+      dialect: org.hibernate.dialect.MySQLDialect
+      current_session_context_class: org.springframework.orm.hibernate5.SpringSessionContext
+
 
 management:
   health:
@@ -109,3 +121,5 @@ dataFetcher:
     urlApiIngest: "https://iadata-dev-ingest.applis.intra/v2/"
     tokenApiIngest: "QkszUHIzUUJXX1c3RTNWYWIxNkM6N2ZJanhjUDlURE9PLS1UWEZab25MUQ=="
     ingestTopic:
+
+

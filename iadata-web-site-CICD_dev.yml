@@ -13,6 +13,11 @@ elastic:
   commonPassword: 97@Z&$Nmy(HX.QU~
   visitorApiKeyBase64: bXI0dUJuUUJrNmo1dk50bmh3OTc6ME5LYVE4dVJUUHFjVGVnV19ZejJFZw==
 
+spring:
+  datasource:
+    url: jdbc:mysql://iadata-dev.applis.intra:10446/iadata-config
+    password: SVZsaUjMd4mMx4wrFB8cM8z3
+
 microservice:
   daemon: tcp://iadata-dev.applis.intra:2375
   registry: iadata-mgr.applis.intra:5000
