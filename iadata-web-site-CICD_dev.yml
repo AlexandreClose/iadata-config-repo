@@ -15,7 +15,7 @@ elastic:
 
 spring:
   datasource:
-    url: jdbc:mysql://iadata-dev.applis.intra:10446/iadata-config
+    url: jdbc:mysql://iadata-dev.applis.intra:1600/iadata-config
     password: SVZsaUjMd4mMx4wrFB8cM8z3
 
 microservice:
