@@ -22,6 +22,7 @@ spring:
   datasource:
     url: jdbc:mysql://https://iadata.applis.toulouse-metropole.fr:1600/iadata-config
     password: dWQNrwQhXDefFR73LNAGQpza
+    initialization-mode: always
 
 
 microservice:
