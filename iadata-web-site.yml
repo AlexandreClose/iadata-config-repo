@@ -25,7 +25,7 @@ spring:
     username: tm-iadata-sql
     password: # to set depending on environment
   jpa:
-    show-sql: true
+    show-sql: false
     hibernate:
       ddl-auto: update
       dialect: org.hibernate.dialect.MySQLDialect
