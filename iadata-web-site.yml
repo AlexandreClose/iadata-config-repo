@@ -83,6 +83,7 @@ streamsapi:
   pathStart: start
   pathStop: stop
   pathRestart: restart
+  pathUpdatePropertyMetadataCache: updatePropertyMetadataCache
 
   # Choose the updateDelay on the HTTP call (default : every minute )
 dataFetcher:
