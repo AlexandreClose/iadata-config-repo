@@ -1,3 +1,8 @@
+spring:
+  boot:
+    admin:
+      client:
+        url: http://iadata-internal-proxy:4444
 # sending to ingest pipeline properties
 ingest:
   ingestMode: api-data

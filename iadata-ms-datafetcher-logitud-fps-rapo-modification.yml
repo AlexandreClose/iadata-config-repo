@@ -2,6 +2,18 @@
 spring:
   main:
     web-environment: false
+  boot:
+    admin:
+      client:
+        url: http://localhost:4444
+
+---
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+---
 
 # Choose the updateDelay on the HTTP call (default : every minute )
 dataFetcher:

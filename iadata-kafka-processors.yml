@@ -2,7 +2,7 @@ spring:
   boot:
     admin:
       client:
-        url: http://iadata-internal-proxy:4444
+        url: http://localhost:4444
   kafka:
     client-id: kafkaprocessor
     bootstrap-servers:
@@ -15,6 +15,13 @@ spring:
     multipart:
       max-file-size: 200MB
       max-request-size: 200MB
+---
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+---
 server:
   servlet:
     context-path: /
@@ -78,12 +85,6 @@ kafkaprocessors:
         # This limit is use for topologytester file upload. If the directory exceed this size after an upload
         # the oldest files will be deleted
         sizeLimit: 80000000000
-#---
-management:
-  endpoints:
-    web:
-      exposure:
-        include: '*'
 ---
 ingest:
   upload:

@@ -1,11 +1,11 @@
 spring:
-  kafka:
-    bootstrap-servers:
-      - ${KAFKA_HOST:10.198.0.91}:${KAFKA_PORT:9094}
   boot:
     admin:
       client:
-        url: http://localhost:4444
+        url: http://iadata-internal-proxy:4444
+  kafka:
+    bootstrap-servers:
+      - ${KAFKA_HOST:10.198.0.91}:${KAFKA_PORT:9094}
 ---
 apidata:
   url: "https://iadata-dev.applis.intra:10444/api/v2/entities/"

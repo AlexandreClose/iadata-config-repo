@@ -19,6 +19,10 @@ siteback:
       transform: LOWERCASE
 
 spring:
+  boot:
+    admin:
+      client:
+        url: http://iadata-internal-proxy:4444
   datasource:
     url: jdbc:mysql://iadata.applis.toulouse-metropole.fr:1600/iadata-config
     password: dWQNrwQhXDefFR73LNAGQpza

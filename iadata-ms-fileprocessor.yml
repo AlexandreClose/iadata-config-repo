@@ -1,5 +1,9 @@
 # dont run job on startup
 spring:
+  boot:
+    admin:
+      client:
+        url: http://localhost:4444
   batch:
     job:
       enabled: false
@@ -18,6 +22,14 @@ spring:
 app:
   scheduling:
     enable: true
+
+---
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+---
 
 fileprocessor:
   inbox : /iadata_inbox

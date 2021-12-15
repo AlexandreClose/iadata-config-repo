@@ -1,5 +1,9 @@
 # dont run job on startup
 spring:
+  boot:
+    admin:
+      client:
+        url: http://iadata-internal-proxy:4444
   batch:
     job:
       enabled: false

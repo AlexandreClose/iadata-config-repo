@@ -1,12 +1,11 @@
-logging:
-  level:
-   # fr.toulouse.iadata: DEBUG
-
 spring:
+  boot:
+    admin:
+      client:
+        url: http://iadata-internal-proxy:4444
   kafka:
     bootstrap-servers:
       - ${KAFKA_HOST:10.198.0.91}:${KAFKA_PORT:9094}
-
 ---
 apidata:
   url: "http://iadata-internal-proxy:1444/api/v2/entities/"
@@ -27,12 +26,3 @@ elastic:
   apiid: yEwknnIBe_6zRi5OnEdV
   host: iadata-internal-proxy
   port: 1443
----
-logging:
-  level:
-    org:
-      springframework:
-        data:
-          elasticsearch:
-            core: DEBUG
-    tracer: TRACE

@@ -17,6 +17,10 @@ elastic:
   visitorApiKeyBase64: bXI0dUJuUUJrNmo1dk50bmh3OTc6ME5LYVE4dVJUUHFjVGVnV19ZejJFZw==
 
 spring:
+  boot:
+    admin:
+      client:
+        url: http://iadata-internal-proxy:4444
   datasource:
     url: jdbc:mysql://iadata-dev.applis.intra:1600/iadata-config
     password: SVZsaUjMd4mMx4wrFB8cM8z3

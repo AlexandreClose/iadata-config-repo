@@ -27,6 +27,10 @@ microservice:
   daemon: tcp://iadata.integration.toulouse-metropole.fr:2375
 
 spring:
+  boot:
+    admin:
+      client:
+        url: http://iadata-internal-proxy:4444
   datasource:
     password: dWQNrwQhXDefFR73LNAGQpza
 

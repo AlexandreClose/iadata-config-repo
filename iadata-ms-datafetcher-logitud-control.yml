@@ -1,8 +1,17 @@
-# disable embedded tomcat
 spring:
+  boot:
+    admin:
+      client:
+        url: localhost:4444
   main:
     web-environment: false
-
+---
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+---
 # Choose the updateDelay on the HTTP call (default : every minute )
 dataFetcher:
   pollingCronExpression: '0 0 */3 * * ?' # "-" to disable the scheduling
