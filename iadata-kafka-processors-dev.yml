@@ -6,6 +6,10 @@ spring:
   kafka:
     bootstrap-servers:
       - ${KAFKA_HOST:10.198.0.91}:${KAFKA_PORT:9094}
+logging:
+  level:
+    fr.toulouse.iadata: DEBUG
+
 ---
 apidata:
   url: "http://iadata-internal-proxy:1444/api/v2/entities/"
