@@ -1,0 +1,27 @@
+etoilediese:
+  urlSendSms: https://ssl.etoilediese.fr/envoi/sms/envoi.php
+  usernameQueryParam: u
+  passwordQueryParam: p
+  dateForMD5QueryParam: date
+  textQueryParam: t
+  phoneNumberQueryParam: n
+  messageTypeQueryParam: f
+  urgenceLevelQueryParam: urg
+  sendingDateQueryParam: dte
+  categoryQueryParam: c
+  authenticationFailedResponseContent: 'Echec : identification incorrecte'
+  authenticationMissingResponseContent: 'Echec : veuillez vous identifier'
+  textMissingResponseContent: 'Echec : veuillez préciser votre texte'
+  endUserAddressMissingResponseContent: 'Echec : veuillez préciser votre correspondant'
+  noMoreCreditResponseContent: 'Echec : plus de crédit'
+  unauthorizedEndUserResponseContent : 'Echec : numéro interdit'
+  endUserUndeliverableResponseContent : 'Echec: stop'
+
+notifysms:
+  behindProxy: true
+  proxyHostEnvName: PROXY_HOST
+  proxyPortEnvName: PROXY_PORT
+  proxyUserNameEnvName: PROXY_USERNAME
+  proxyPasswordEnvName: PROXY_PASSWORD
+  userNameSMSServiceAuthen: iottoulouse562
+  passwordSMSServiceAuthent: VxV84m9ebm
