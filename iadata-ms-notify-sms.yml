@@ -11,10 +11,10 @@ etoilediese:
   categoryQueryParam: c
   authenticationFailedResponseContent: 'Echec : identification incorrecte'
   authenticationMissingResponseContent: 'Echec : veuillez vous identifier'
-  textMissingResponseContent: 'Echec : veuillez préciser votre texte'
-  endUserAddressMissingResponseContent: 'Echec : veuillez préciser votre correspondant'
-  noMoreCreditResponseContent: 'Echec : plus de crédit'
-  unauthorizedEndUserResponseContent : 'Echec : numéro interdit'
+  textMissingResponseContent: 'Echec : veuillez preciser votre texte'
+  endUserAddressMissingResponseContent: 'Echec : veuillez preciser votre correspondant'
+  noMoreCreditResponseContent: 'Echec : plus de credit'
+  unauthorizedEndUserResponseContent : 'Echec : numero interdit'
   endUserUndeliverableResponseContent : 'Echec: stop'
 
 notifysms:
