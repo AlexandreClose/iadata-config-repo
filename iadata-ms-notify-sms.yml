@@ -1,6 +1,6 @@
 spring:
   kafka:
-    client-id: notify-sms
+    client-id: iadata-notify-sms
     bootstrap-servers:
       - ${KAFKA_HOST:localhost}:${KAFKA_PORT:9094}
 etoilediese:
