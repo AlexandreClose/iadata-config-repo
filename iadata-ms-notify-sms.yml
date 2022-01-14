@@ -1,3 +1,8 @@
+spring:
+  kafka:
+    client-id: notify-sms
+    bootstrap-servers:
+      - ${KAFKA_HOST:localhost}:${KAFKA_PORT:9094}
 etoilediese:
   urlSendSms: https://ssl.etoilediese.fr/envoi/sms/envoi.php
   usernameQueryParam: u
