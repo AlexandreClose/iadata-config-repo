@@ -36,3 +36,4 @@ notifysms:
   userNameSMSServiceAuthen: iottoulouse562
   passwordSMSServiceAuthent: VxV84m9ebm
   topicIn: iadata-data-alert-notify-sms
+  brokerAddress: kafka-1:9092
