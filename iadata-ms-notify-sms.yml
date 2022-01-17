@@ -5,8 +5,8 @@ spring:
         url: http://localhost:4444
   kafka:
     client-id: iadata-notify-sms
-    bootstrap-servers:
-      - ${KAFKA_HOST:localhost}:${KAFKA_PORT:9094}
+    consumer:
+      bootstrap-servers: ${KAFKA_HOST:localhost}:${KAFKA_PORT:9094}
 
 etoilediese:
   urlSendSms: https://ssl.etoilediese.fr/envoi/sms/envoi.php
