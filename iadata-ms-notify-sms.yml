@@ -33,7 +33,7 @@ notifysms:
   proxyPortEnvName: PROXY_PORT
   proxyUserNameEnvName: PROXY_USERNAME
   proxyPasswordEnvName: PROXY_PASSWORD
-  userNameSMSServiceAuthen: iottoulouse562
+  userNameSMSServiceAuthent: iottoulouse562
   passwordSMSServiceAuthent: VxV84m9ebm
   topicIn: iadata-data-alert-notify-sms
   brokerAddress: kafka-1:9092
