@@ -5,8 +5,6 @@ spring:
         url: http://localhost:4444
   kafka:
     client-id: iadata-notify-sms
-    consumer:
-      bootstrap-servers: kafka-1:9092
 
 etoilediese:
   urlSendSms: https://ssl.etoilediese.fr/envoi/sms/envoi.php
@@ -37,3 +35,6 @@ notifysms:
   passwordSMSServiceAuthent: VxV84m9ebm
   topicIn: iadata-data-alert-notify-sms
   brokerAddress: kafka-1:9092
+  defaultNotifyCategory: test
+  defaultNotifyType: sms
+  defaultNotifyEmergencyLevel: flash
