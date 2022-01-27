@@ -8,7 +8,7 @@ spring:
       - ${KAFKA_HOST:10.198.0.91}:${KAFKA_PORT:9094}
 logging:
   level:
-    fr.toulouse.iadata: DEBUG
+    fr.toulouse.iadata: INFO
 
 ---
 apidata:
