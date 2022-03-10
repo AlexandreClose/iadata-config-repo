@@ -1,9 +1,7 @@
 #Elastic Logs
 #logging.level.org.springframework.data.elasticsearch.core=DEBUG
 #logging.level.tracer=TRACE
-logging:
-  level:
-    fr.toulouse.iadata: DEBUG
+
 #Elastic conf
 elastic:
   scheme: https
