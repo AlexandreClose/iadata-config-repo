@@ -5,6 +5,9 @@
     #tracer: TRACE
 #    fr.toulouse.iadata: DEBUG
 
+logging:
+  level:
+    fr.toulouse.iadata: DEBUG
 #Elastic conf
 elastic:
   scheme: https
