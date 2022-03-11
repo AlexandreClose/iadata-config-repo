@@ -1,0 +1,47 @@
+#Elastic Logs
+#logging:
+#  level:
+    #org.springframework.data.elasticsearch.core: DEBUG
+    #tracer: TRACE
+#    fr.toulouse.iadata: DEBUG
+
+logging:
+  level:
+    fr.toulouse.iadata: DEBUG
+#Elastic conf
+elastic:
+  scheme: https
+  host: iadata-internal-proxy
+  port: 1443
+  useSSL: true
+  securityType: apiKey
+  technicalApiKeyBase64: QkszUHIzUUJXX1c3RTNWYWIxNkM6N2ZJanhjUDlURE9PLS1UWEZab25MUQ==
+  commonPassword: 97@Z&$Nmy(HX.QU~
+  visitorApiKeyBase64: bXI0dUJuUUJrNmo1dk50bmh3OTc6ME5LYVE4dVJUUHFjVGVnV19ZejJFZw==
+
+spring:
+  boot:
+    admin:
+      client:
+        url: http://iadata-internal-proxy:4444
+  datasource:
+    url: jdbc:mysql://iadata-dev.applis.intra:1600/iadata-config
+    password: SVZsaUjMd4mMx4wrFB8cM8z3
+
+siteback:
+  api:
+    userid:
+      transform: LOWERCASE
+
+microservice:
+  daemon: tcp://ld2dat003t.mairie.toulouse.fr:2375
+# apifetcher properties
+apiConsume:
+  customHeaders:
+    Bearer: QkszUHIzUUJXX1c3RTNWYWIxNkM6N2ZJanhjUDlURE9PLS1UWEZab25MUQ==
+paginaterangeprovider:
+  valueStart: 0
+ingest:
+  ingestMode: api
+  urlApiIngest: "https://ld2dat003t.mairie.toulouse.fr/v2/"
+  tokenApiIngest: "QkszUHIzUUJXX1c3RTNWYWIxNkM6N2ZJanhjUDlURE9PLS1UWEZab25MUQ=="

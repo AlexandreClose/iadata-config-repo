@@ -1,0 +1,20 @@
+# dont run job on startup
+spring:
+  boot:
+    admin:
+      client:
+        url: http://iadata-internal-proxy:4444
+  batch:
+    job:
+      enabled: false
+    initialize-schema: always
+  main:
+    web-application-type: none
+
+  # Kafka config
+  kafka:
+    consumer:
+      bootstrap-servers: kafka-1:9092
+    producer:
+      bootstrap-servers: kafka-1:9092
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
