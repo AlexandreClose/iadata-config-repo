@@ -5,10 +5,12 @@
 #Elastic conf
 elastic:
   scheme: https
-  host: iadata-dev-ingest.applis.intra
-  port: 10443
+  host: ld2dat003t.mairie.toulouse.intra
+  port: 4443
   useSSL: true
-  securityType: apiKey
+  securityType: none
+  username: admin
+  pass: admin
   technicalApiKeyBase64: QkszUHIzUUJXX1c3RTNWYWIxNkM6N2ZJanhjUDlURE9PLS1UWEZab25MUQ==
   commonPassword: 97@Z&$Nmy(HX.QU~
   visitorApiKeyBase64: bXI0dUJuUUJrNmo1dk50bmh3OTc6ME5LYVE4dVJUUHFjVGVnV19ZejJFZw==
