@@ -8,7 +8,7 @@ elastic:
   host: ld2dat003t.mairie.toulouse.intra
   port: 4443
   useSSL: true
-  securityType: none
+  securityType: loginPassword
   username: admin
   pass: admin
   technicalApiKeyBase64: QkszUHIzUUJXX1c3RTNWYWIxNkM6N2ZJanhjUDlURE9PLS1UWEZab25MUQ==
